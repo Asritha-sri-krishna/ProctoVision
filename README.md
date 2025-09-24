@@ -1,6 +1,6 @@
-# Exam Monitor System
+# 🎯 ProctoVision
 
-A real-time exam malpractice detection system using computer vision and AI.
+🚨 A real-time exam malpractice detection system using computer vision and AI.
 
 ## Features
 
@@ -11,7 +11,7 @@ A real-time exam malpractice detection system using computer vision and AI.
 - **Logging**: Automatic snapshot saving and CSV logging of events
 - **Head Pose Detection**: Detects when student is looking away (when MediaPipe is available)
 
-## Setup
+## ⚙️ Setup
 
 1. **Activate your virtual environment**:
    ```powershell
@@ -26,7 +26,7 @@ A real-time exam malpractice detection system using computer vision and AI.
    - pyttsx3 (text-to-speech)
    - Pillow (image processing)
 
-## Usage
+##🚀 Usage
 
 ### Basic Usage
 ```powershell
@@ -39,27 +39,27 @@ If you know the coordinates of your exam area, you can specify them:
 python exam_monitor_local.py --seat_zone 100 100 500 400
 ```
 
-### Controls
+### 🎮 Controls
 - **Press 'c'**: Calibrate the exam zone by drawing a rectangle
 - **Press 'q'**: Quit the application
 
-## How It Works
+## 🔎 How It Works
 
 1. **Initialization**: The system loads the YOLOv8 model and starts the webcam
 2. **Zone Calibration**: Draw a rectangle around the exam area (desk/seat)
 3. **Real-time Monitoring**:
-   - Detects objects of interest (persons, phones, laptops, books)
+   - Detects 🎭 persons, 📱 phones, 💻 laptops, 📚 books
    - Tracks objects with unique IDs
    - Monitors if objects are inside/outside the exam zone
    - Checks for multiple persons or prohibited items
    - Detects student absence or looking away behavior
 
-## Detected Malpractices
+## 🚫 Detected Malpractices
 
-- **Multiple Persons**: More than one person in exam area
-- **Mobile Phone**: Phone detected on desk/in exam zone
-- **Student Absence**: No face detected for extended time
-- **Looking Away**: Extended periods of looking away from screen (requires MediaPipe)
+-  👥 **Multiple Persons**: More than one person in exam area
+-  📱**Mobile Phone**: Phone detected on desk/in exam zone
+-  🚶**Student Absence**: No face detected for extended time
+-  👀**Looking Away**: Extended periods of looking away from screen (requires MediaPipe)
 
 ## Output Files
 

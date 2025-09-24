@@ -1,0 +1,46 @@
+# Python Environment and Cache
+exam_env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Exam Monitoring Specific
+local_exam_logs/
+snapshots/
+*.jpg
+*.png
+*.mp4
+*.avi
+
+# Model Files (too large for Git)
+yolov8n.pt
+yolo*.pt
+*.weights
+
+# IDE and System Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Temporary and Config Files
+temp/
+tmp/
+exam_config.txt
+*.log
+*.tmp
+
+# Personal/Private Files
+personal_*
+private_*
+test_images/
+calibration_*
